@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Just Do IT, Nike Korea</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="title" content="Just Do it. 나이키 코리아">
+        <meta name="publisher" content="frontEnd osj">
+        <meta name="author-date" content="2020-10-19">
+        <meta name="author" content="Nike">
+        <meta name="copyright" content="Nike">
+        <meta name="keywords" content="Just Do it, Nike, Nike Korea, Soccer, Basketball, Tennis">
+        <meta name="description" content="Just Do it, Nike Korea"> 
+        <meta name="robots" content="index, follow">
+        
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="./img/android-icon-36x36.png" type="imag/ico">
+        <link rel="apple-touch-icon" href="./img/android-icon-36x36.png" type="img/ico">
+
+        <!-- 오픈 아이콘-->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/search.css">
+        <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="./css/aos.css">
+
+        <script src="./js/aos.js"></script>
+        <script src="./js/lib/jquery-3.6.0.min.js"></script>
+        <script src="./js/lib/prefixfree.min.js"></script>
+        <!-- 웹 브라우저 엔진 폴리필 / 벤더프리픽스 -->
+        <!-- 크롬, 사파리 -webkit-transition:all 0.3s;
+        파이어폭스   -moz-transition:all 0.3s
+        익스플로어   -ms-transition:all 0.3s    
+        오페라       -o-transition:all 0.3s
+                        transition:all 0.3s -->
+
+        <script src="./js/lib/jquery.easing.1.3.js"></script>
+        <script src="./js/lib/jquery.touchSwipe.js"></script>
+
+        <script>
+            
+            var imgArray = new Array();
+            imgArray[0] = "./img/quick-menu1.png";
+            imgArray[1] = "./img/quick-menu2.png"; 
+            imgArray[2] = "./img/quick-menu3.png"; 
+            
+            function showImage(){
+                var imgNum = Math.round(Math.random()*2);
+                var objImg = document.getElementById("introImg");
+                objImg.src = imgArray[imgNum]
+
+                setTimeout("showImage()", 2000);
+
+                $('.url-btn').on({
+                click:function(){
+                    a = $(this).children().attr('src');
+                    console.log
+                    if(a=="./img/quick-menu1.png"){
+                        location.href="https://www.nike.com/kr/ko_kr/w/xg/ap/jd/winter-utility";
+                    } else if(a=="./img/quick-menu2.png") {
+                        location.href="https://www.nike.com/kr/ko_kr/w/xg/fw/nsw/blazer-collection";
+                    } else if(a=="./img/quick-menu3.png") {
+                        location.href="https://www.nike.com/kr/ko_kr/c/xcat/the-stage";
+                    }
+                }
+            });
+        }
+ 
+    
+
+        </script>
+        <!-- 조건 주석문 익스프롤러 하위 IE9 IE8 IE7 폴리필 -->
+    <!-- 스크립트 스타일 -->
+    
+    <!--[if lte IE 9]>
+        <script src="./js/lib/IE9.js"></script>
+    <![endif]-->
+    
+    <!--[if lte IE 8]>
+        <script src="./js/lib/html5shiv.min.js"></script>    
+        <script src="./js/lib/jqPIE.js"></script>    
+        <script src="./js/lib/PIE.js"></script> 
+        <link rel="stylesheet" type="text/css" href="./css/ie8.css">   
+    <![endif]-->
+    
+    <!--[if lte IE 7]>    
+       <link rel="stylesheet" type="text/css" href="./css/ie7.css">
+    <![endif]-->    
+    </head>
+    <body onload="showImage()">
+        <ul id="skip">
+            <li><a href="#header" title="'메뉴 바로가기">메뉴 바로가기</a></li>
+            <li><a href="#footer" title="'하단 바로가기">하단 바로가기</a></li>
+        </ul>
+        <div id="wrap">
+            <header id="header">
+                <div class="link-header fixedclear">
+                    <ul class="logoBox fixedclear">
+                        <li><a href="#" class="Helvetica" title="Nike">Nike</a></li>
+                        <li><a href="#" class="Helvetica" title="Join Us">Join Us</a></li>
+                        <li class="image"><a href="#" title="jordan"><img src="./img/jumpman.png" onmouseover='this.src="./img/jumpman_after.png"' onmouseout='this.src="./img/jumpman.png"' alt="jordan"></a></li>
+                        <li class="image"><a href="#" title="converse"><img src="./img/converse.png" onmouseover='this.src="./img/converse_after.png"' onmouseout='this.src="./img/converse.png"' alt="converse"></a></li>
+                    </ul>
+
+                    <ul class="menuBox fixedclear">
+                        <li><span><a href="#" class="Helvetica" title="회원가입">회원가입</a>/<a href="#" title="로그인">로그인</a></span></li>
+                        <li><a href="#" class="Helvetica" title="고객센터">고객센터</a></li>
+                        <li><a href="#" title="장바구니"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="#" class="Helvetica" title="국가"><i class="material-icons">location_on</i> 대한민국</a></li>
+                    </ul>
+                </div>
+
+                <nav id="menu-nav" class="fixedclear">
+                    <div class="logo-box">
+                        <a href="#" title="swoosh-logo"><img src="./img/swoosh.png" alt="swoosh"></a>
+                     </div>
+
+                     <div class="menu-wrap">
+                         <ul>
+                             <li>
+                                <span class="border"> <a href="#" class="main-btn" title="new releases">NEW RELEASES</a> </span>
+                                    <div class="sub sub1">
+                                        <ul class="fixedclear">
+                                            <li>
+                                                <div class="sub-wrap">
+                                                    <ul class="fixedclear">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#" title="신상품 전체보기">신상품 전체보기</a></li>
+                                                                <li><a href="#" title="SNKRS">SNKRS</a></li>
+                                                                <li><a href="#" title="윈터웨어 컬렉션">윈터웨어 컬렉션</a></li>
+                                                                <li><a href="#" title="나이키 데이브레이크">나이키 데이브레이크</a></li>
+                                                                <li><a href="#" title="에어 포스 1">에어 포스 1</a></li>
+                                                                <li><a href="#" title="ACG">ACG</a></li>
+                                                                <li><a href="#" title="NikeLab">NikeLab</a></li>
+                                                                <li><a href="#" title="CUSTOM SERVICE">CUSTOM SERVICE</a></li>
+                                                                <li><a href="#" title="NEW TO SALE">NEW TO SALE</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="NEW FOR MEN" >NEW FOR MEN</a></li>
+                                                                <li><a href="#" title="신발">신발</a></li>
+                                                                <li><a href="#" title="의류">의류</a></li>
+                                                                <li><a href="#" title="용품">용품</a></li>
+                                                                <li><a href="#" title="전체보기">전체보기</a></li>
+                                                                <li><br><br><br><br><br></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="NEW FOR WOMEN">NEW FOR WOMEN</a></li>
+                                                                <li><a href="#" title="신발">신발</a></li>
+                                                                <li><a href="#" title="의류">의류</a></li>
+                                                                <li><a href="#" title="용품">용품</a></li>
+                                                                <li><a href="#" title="전체보기">전체보기</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="NEW FOR KIDS">NEW FOR KIDS</a></li>
+                                                                <li><a href="#" title="신발">신발</a></li>
+                                                                <li><a href="#" title="의류">의류</a></li>
+                                                                <li><a href="#" title="용품">용품</a></li>
+                                                                <li><a href="#" title="전체보기">전체보기</a></li>
+                                                                <li><br><br><br><br><br></li>                                                               
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                             <li>
+                                <span><a href="#" class="main-btn" title="men">MEN</a></span>
+                                 <div class="sub sub2">
+                                        <ul class="fixedclear">
+                                            <li>
+                                                <div class="sub-wrap">
+                                                    <ul class="fixedclear">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#" title="신상품">신상품</a></li>
+                                                                <li><a href="#" title="SNKRS">SNKRS</a></li>
+                                                                <li><a href="#" title="THE BEST">THE BEST</a></li>
+                                                                <li><a href="#" title="MEMBER SHOP">MEMBER SHOP</a></li>
+                                                                <li><a href="#" title="윈터웨어 컬렉션">윈터웨어 컬렉션</a></li>
+                                                                <li><a href="#" title="홈트레이닝 컬렉션">홈트레이닝 컬렉션</a></li>
+                                                                <li><a href="#" title="NikeLab">나이키 마라톤 컬렉션</a></li>
+                                                                <li><a href="#" title="젠더리스 컬렉션">젠더리스 컬렉션</a></li>
+                                                                <li><a href="#" title="CUSTOM SERVICE">CUSTOM SERVICE</a></li>
+                                                                <li><a href="#" title="1 ON 1 상품 설명 서비스">1 ON 1 상품 설명 서비스</a></li>
+                                                                <li><a href="#" title="SALE">SALE</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="신발">신발</a></li>
+                                                                <li><a href="#" title="신발 전체">신발 전체</a></li>
+                                                                <li><a href="#" title="라이프스타일">라이프스타일</a></li>
+                                                                <li><a href="#" title="러닝">러닝</a></li>
+                                                                <li><a href="#" title="트레이닝&짐">트레이닝 & 짐</a></li>
+                                                                <li><a href="#" title="농구">농구</a></li>
+                                                                <li><a href="#" title="조던">조던</a></li>
+                                                                <li><a href="#" title="축구">축구</a></li>
+                                                                <li><a href="#" title="스케이트보딩">스케이트보딩</a></li>
+                                                                <li><a href="#" title="골프">골프</a></li>
+                                                                <li><a href="#" title="테니스">테니스</a></li>
+                                                                <li><a href="#" title="샌들 & 슬리퍼">샌들 & 슬리퍼</a></li>
+                                                                <li><br><br><br></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="의류">의류</a></li>
+                                                                <li><a href="#" title="의류 전체">의류 전체</a></li>
+                                                                <li><a href="#" title="재킷 & 베스트">재킷 & 베스트</a></li>
+                                                                <li><a href="#" title="후디 & 크루">후디 & 크루</a></li>
+                                                                <li><a href="#" title="팬츠 & 타이츠">팬츠 & 타이츠</a></li>
+                                                                <li><a href="#" title="탑 & 티셔츠">탑 & 티셔츠</a></li>
+                                                                <li><a href="#" title="숏 팬츠">숏 팬츠</a></li>
+                                                                <li><a href="#" title="나이키 프로">나이키 프로</a></li>
+                                                                <li><a href="#" title="양말">양말</a></li>
+                                                                <li><a href="#" title="셋업">셋업</a></li>
+                                                                <li><a class="hide">히든</a></li>
+                                                            </ul>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="용품">용품</a></li>
+                                                                <li><a href="#" title="모자 & 헤드밴드">모자 & 헤드밴드</a></li>
+                                                                <li><a href="#" title="가방">가방</a></li>
+                                                                <li><a href="#" title="애플워치">애플워치</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="스포츠">스포츠</a></li>
+                                                                <li><a href="#" title="러닝">러닝</a></li>
+                                                                <li><a href="#" title="트레이닝 & 짐">트레이닝 & 짐</a></li>
+                                                                <li><a href="#" title="농구">농구</a></li>
+                                                                <li><a href="#" title="축구">축구</a></li>
+                                                                <li><a href="#" title="스케이트보딩">스케이트보딩</a></li>
+                                                                <li><a href="#" title="골프">골프</a></li>
+                                                                <li><a href="#" title="테니스">테니스</a></li>
+                                                                <li><br><br><br><br><br><br><br><br></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="브랜드">브랜드</a></li>
+                                                                <li><a href="#" title="Nike Sportswear">Nike Sportswear</a></li>
+                                                                <li><a href="#" title="NikeLab">NikeLab</a></li>
+                                                                <li><a href="#" title="Jordan">Jordan</a></li>
+                                                                <li><a href="#" title="NBA">NBA</a></li>
+                                                                <li><a href="#" title="ACG">ACG</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                            </li>   
+                             <li>
+                                <span><a href="#" class="main-btn" title="women">WOMEN</a></span>
+                                    <div class="sub sub3">
+                                        <ul class="fixedclear">
+                                            <li>
+                                                <div class="sub-wrap">
+                                                    <ul class="fixedclear">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#" title="신상품">신상품</a></li>
+                                                                <li><a href="#" title="SNKRS">SNKRS</a></li>
+                                                                <li><a href="#" title="THE BEST">THE BEST</a></li>
+                                                                <li><a href="#" title="MEMBER SHOP">MEMBER SHOP</a></li>
+                                                                <li><a href="#" title="FEMME 컬렉션">FEMME 컬렉션</a></li>
+                                                                <li><a href="#" title="윈터웨어 컬렉션">윈터웨어 컬렉션</a></li>
+                                                                <li><a href="#" title="홈트레이닝 컬렉션">홈트레이닝 컬렉션</a></li>
+                                                                <li><a href="#" title="나이키 마라톤 컬렉션">나이키 마라톤 컬렉션</a></li>
+                                                                <li><a href="#" title="나이키 데이브레이크">나이키 데이브레이크</a></li>
+                                                                <li><a href="#" title="1 ON 1 상품 설명 서비스">1 ON 1 상품 설명 서비스</a></li>
+                                                                <li><a href="#" title="SALE">SALE</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="신발">신발</a></li>
+                                                                <li><a href="#" title="신발 전체">신발 전체</a></li>
+                                                                <li><a href="#" title="라이프스타일">라이프스타일</a></li>
+                                                                <li><a href="#" title="러닝">러닝</a></li>
+                                                                <li><a href="#" title="트레이닝&짐">트레이닝 & 짐</a></li>
+                                                                <li><a href="#" title="조던">조던</a></li>
+                                                                <li><a href="#" title="축구">축구</a></li>
+                                                                <li><a href="#" title="골프">골프</a></li>
+                                                                <li><a href="#" title="테니스">테니스</a></li>
+                                                                <li><a href="#" title="샌들 & 슬리퍼">샌들 & 슬리퍼</a></li>
+                                                                <li><br><br><br><br><br><br><br></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="의류">의류</a></li>
+                                                                <li><a href="#" title="의류 전체">의류 전체</a></li>
+                                                                <li><a href="#" title="재킷 & 베스트">재킷 & 베스트</a></li>
+                                                                <li><a href="#" title="후디 & 크루">후디 & 크루</a></li>
+                                                                <li><a href="#" title="팬츠 & 숏팬츠">팬츠 & 숏팬츠</a></li>
+                                                                <li><a href="#" title="타이츠 & 레깅스">타이츠 & 레깅스</a></li>
+                                                                <li><a href="#" title="스포츠 브라">스포츠 브라</a></li>
+                                                                <li><a href="#" title="탑 & 티셔츠">탑 & 티셔츠</a></li>
+                                                                <li><a href="#" title="스커트 & 드레스">스커트 & 드레스</a></li>
+                                                                <li><a href="#" title="양말">양말</a></li>
+                                                                <li><a href="#" title="셋업">셋업</a></li>
+                                                                <li><a class="hide">히든</a></li>
+                                                            </ul>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="용품">용품</a></li>
+                                                                <li><a href="#" title="모자 & 헤드밴드">모자 & 헤드밴드</a></li>
+                                                                <li><a href="#" title="가방">가방</a></li>
+                                                                <li><a href="#" title="애플워치">애플워치</a></li>
+                                                
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="스포츠">스포츠</a></li>
+                                                                <li><a href="#" title="러닝">러닝</a></li>
+                                                                <li><a href="#" title="트레이닝 & 짐">트레이닝 & 짐</a></li>
+                                                                <li><a href="#" title="축구">축구</a></li>
+                                                                <li><a href="#" title="골프">골프</a></li>
+                                                                <li><a href="#" title="테니스">테니스</a></li>
+                                                                <li><a href="#" title="요가">요가</a></li>
+                                                                <li><br><br><br><br><br><br><br><br><br><br><br></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#" title="브랜드">브랜드</a></li>
+                                                                <li><a href="#" title="Nike Sportswear">Nike Sportswear</a></li>
+                                                                <li><a href="#" title="NikeLab">NikeLab</a></li>
+                                                                <li><a href="#" title="Jordan">Jordan</a></li>
+                                                                <li><a href="#" title="ACG">ACG</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                            </li>
+                             <li>
+                                <span><a href="#" class="main-btn" title="kids">KIDS</a></span>
+                                 <div class="sub sub4">
+                                    <ul class="fixedclear">
+                                        <li>
+                                            <div class="sub-wrap">
+                                                <ul class="fixedclear">
+                                                    <li>
+                                                        <ul>
+                                                            <li><a href="#" title="신상품">신상품</a></li>
+                                                            <li><a href="#" title="나이키 키즈 클래식">나이키 키즈 클래식</a></li>
+                                                            <li><a href="#" title="윈터웨어 컬렉션">윈터웨어 컬렉션</a></li>
+                                                            <li><a href="#" title="리바이벌 컬렉션">리바이벌 컬렉션</a></li>
+                                                            <li><a href="#" title="패밀리 룩 컬렉션">패밀리 룩 컬렉션</a></li>
+                                                            <li><a href="#" title="조던 키즈">조던 키즈</a></li>
+                                                            <li><a href="#" title="키즈 에어 포스 1">키즈 에어 포스 1</a></li>
+                                                            <li><a href="#" title="베이비 샵">베이비 샵</a></li>
+                                                            <li><a href="#" title="SALE">SALE</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#" title="신발">신발</a></li>
+                                                            <li><a href="#" title="베이비">베이비(160mm 이하)</a></li>
+                                                            <li><a href="#" title="리틀키즈">리틀키즈((165-220mm)</a></li>
+                                                            <li><a href="#" title="주니어">주니어(220mm-250mm)</a></li>
+                                                            <li><a href="#" title="라이프스타일">라이프스타일</a></li>
+                                                            <li><a href="#" title="러닝">러닝</a></li>
+                                                            <li><a href="#" title="축구">축구</a></li>
+                                                            <li><a href="#" title="농구">농구</a></li>
+                                                            <li><a href="#" title="샌들 & 슬리퍼">샌들 & 슬리퍼</a></li>
+                                                            <li><br><br><br></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#" title="의류">의류</a></li>
+                                                            <li><a href="#" title="베이비">베이비(0-4세)</a></li>
+                                                            <li><a href="#" title="리틀키즈">리틀키즈(4-7세)</a></li>
+                                                            <li><a href="#" title="주니어">주니어(8-13세)</a></li>
+                                                            <li><a href="#" title="재킷 & 베스트">재킷 & 베스트</a></li>
+                                                            <li><a href="#" title="후디 & 크루">후디 & 크루</a></li>
+                                                            <li><a href="#" title="팬츠 & 레깅스">팬츠 & 레깅스</a></li>
+                                                            <li><a href="#" title="트랙수트 & 세트">트랙수트 & 세트</a></li>
+                                                            <li><a href="#" title="탑 & 티셔츠">탑 & 티셔츠</a></li>
+                                                            <li><a href="#" title="스커트 & 드레스">스커트 & 드레스</a></li>
+                                                            <li><a href="#" title="가방 & 모자 & 용품">가방 & 모자 & 용품</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#" title="스포츠">스포츠</a></li>
+                                                            <li><a href="#" title="러닝">러닝</a></li>
+                                                            <li><a href="#" title="축구">축구</a></li>
+                                                            <li><a href="#" title="농구">농구</a></li>
+                                                            <li><a href="#" title="테니스">테니스</a></li>
+                                                            <li><br><br><br><br><br><br><br><br></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                         </ul>
+                     </div>
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="검색" />
+                        <button class="search-icon search-toggle"><span></span></button>
+                    </div>
+                    <span class="close search-toggle"></span>
+                </div>
+                
+                </nav>
+            </header>
+            <main id="main">
+                
+                <script>
+                    AOS.init();
+        
+                    // You can also pass an optional settings object
+                    // below listed default settings
+                    AOS.init({
+                    // Global settings:
+                    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                    initClassName: 'aos-init', // class applied after initialization
+                    animatedClassName: 'aos-animate', // class applied on animation
+                    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+                    
+        
+                    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                    offset: 150, // offset (in px) from the original trigger point
+                    delay: 100, // values from 0 to 3000, with step 50ms
+                    duration: 1000, // values from 0 to 3000, with step 50ms
+                    easing: 'ease', // default easing for AOS animations
+                    once: false, // whether animation should happen only once - while scrolling down
+                    mirror: false, // whether elements should animate out while scrolling past them
+                    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        
+                    });
+                </script>
+
+                <section id="section1">
+                    <h2 class="hide">nike us</h2>
+                    <div class="wrap">
+                        <div class="image-container">
+                            <div class="image-view">
+                                <a href="#"><img src="./img/201022_cdp_dance_ara_p1_bg5.jpg" alt="nike us"></a>  
+                            </div>
+                            <div class="image-text">
+                                <img src="./img/200924_rn_p1_img.jpg" alt="nike us-text">
+                            </div>
+                            <div class="text-wrap">
+                            <p class="title">
+                                서로의 무대가 어디든,춤으로 하나가 되는 우리. <br>
+                                춤으로 세상을 바꿔가는 아티스트들의 스토리, 그들이 직접 추천하는 스타일을 만나보고 <br>
+                                최고의 댄스 크루들을 위한 THE STAGE에 참가해보세요.
+                            </p>
+                            <div class="button">
+                                <span>
+                                    <a href="#" class="stage-btn">THE STAGE 참여하기</a>
+                                </span>
+                                <span>
+                                    <a href="#" class="collection-btn">컬렉션 구매하기</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </section>
+
+                <section id="section2">
+                    <h2 class="hide">style</h2>
+                    <div class="wrap" data-aos="fade-up">
+                        <div class="image-container">
+                            <h3 class="title">
+                                이번 주 스타일링
+                            </h3>
+                            <br>
+                            <div class="image-view">
+                                <a href="#"><img src="./img/201026_hp_p2_bg.gif" alt="style"></a>
+                            </div>
+                            <div class="text-wrap">
+                                <p class="title2">
+                                    자신감 있는 움직임을 위한 나이키 댄스 스타일링
+                                </p>
+                                <div class="sub-wrap">
+                                <p class="text">
+                                    나이키가 제안하는 다양한 댄스 스타일링과 함께 댄스를 즐겨보세요. <br>
+                                    반짝이는 스타일과 기능성을 더한 컬렉션으로 개성 있는 스타일을 완성합니다.
+                                </p>
+                                <div class="button">
+                                    <span>
+                                        <a href="#" class="buy-btn">구매하기</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="style-btn">더 많은 스타일링 보기</a>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section3">
+                    <h2 class="hide">collection1</h2>
+                    <div class="wrap" data-aos="fade-up">
+                        <div class="image-container">
+                            <div class="image-view">
+                                <a href="#"><img src="./img/201023_hp_p2_bg.jpg" alt="collection1"></a>
+                            </div>
+                            <div class="text-wrap">
+                                    <p class="title2">
+                                        패스트 앤 퍼리 컬렉션
+                                    </p>
+                                <div class="sub-wrap">
+                                    <p class="text">
+                                        귀여운 몬스터 캐릭터에 포근한 퍼 디테일로 새롭게 출시된 <br>
+                                        패스트 앤 퍼리 컬렉션을 나이키 멤버가 되어 가장 먼저 만나보세요.
+                                    </p>
+                                    <div class="button">
+                                        <span>
+                                            <a href="#" class="buy-btn">컬렉션 구매하기</a>
+                                        </span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section4">
+                    <h2 class="hide">collection2</h2>
+                    <div class="wrap" data-aos="fade-up">
+                        <div class="image-container">
+                            <div class="image-view">
+                                <a href="#"><img src="./img/201015_hp_p4_bg.jpg" alt="collection2"></a>
+                            </div>
+                            <div class="text-wrap">
+                                <p class="title2">
+                                    윈터웨어 컬렉션
+                                </p>
+                                <div class="sub-wrap">
+                                <p class="text">
+                                    셰르파부터 패딩까지, 윈터웨어 컬렉션과 함께 따듯한 겨울을 준비하세요.
+                                </p>
+                                <div class="button">
+                                    <span>
+                                        <a href="#" class="buy-btn">구매하기</a>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section5" >
+                    <h2 class="hide">Trending Now</h2>
+                    <div class="wrap">
+                        <div class="container">
+                            <h3 class="title">
+                                Trending Now
+                            </h3>
+                            <br>
+                            <ul class="image-container">
+                                <li class="image-link" data-aos="zoom-in-right"><div><a href="#"><img src="./img/201027_nsw_p7_bg3.jpg" alt=""></a><p>셰르파 컬렉션</p><span><a href="#" title="자세히 보기">구매하기</a></span></div></li>
+                                <li class="image-link" data-aos="zoom-in-left"><div><a href="#"><img src="./img/201027_nsw_p7_bg4.jpg" alt=""></a><p>지속가능 컬렉션</p><span><a href="#" title="자세히 보기">구매하기</a></span></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section6">
+                    <h2 class="hide">Shoes</h2>
+                    <div class="wrap">
+                        <div class="slide-container addBtn">    
+                            <h3 class="title">
+                                Featured Shoes
+                            </h3>
+                            <br>
+                            <div class="slide-view">
+                            <ul class="slide-wrap fixedclear">
+                                <li class="slide slide7"><div><img src="./img/slide_07.jpg" alt=""><span><a title="머큐리얼 베이퍼">나이키 머큐리얼 베이퍼 13 프로 MDS HG</a></span></div></li>
+                                <li class="slide slide0" data-aos="zoom-in-up"><div><img src="./img/slide_00.jpg" alt=""><span><a href="#" title="베이퍼맥스">나이키 에어 베이퍼맥스 2020 FK</a></span></div></li>
+                                <li class="slide slide1" data-aos="zoom-in-up"><div><img src="./img/slide_01.jpg" alt=""><span><a href="#" title="에어 포스">나이키 에어 포스 1 CRATER</a></span></div></li>
+                                <li class="slide slide2" data-aos="zoom-in-up"><div><img src="./img/slide_02.jpg" alt=""><span><a href="#" title="데이브레이크">나이키 데이브레이크</a></span></div></li>
+                                <li class="slide slide3"><div><img src="./img/slide_03.jpg" alt=""><span><a href="#" title="줌 페가수스">나이키 에어 줌 페가수스 37</a></span></div></li>
+                                <li class="slide slide4"><div><img src="./img/slide_04.jpg" alt=""><span><a href="#" title="르브론">르브론 18</a></span></div></li>
+                                <li class="slide slide5"><div><img src="./img/slide_05.jpg" alt=""><span><a href="#" title="에어 조던 6">에어 조던 6 레트로</a></span></div></li>
+                                <li class="slide slide6"><div><img src="./img/slide_06.jpg" alt=""><span><a href="#" title="에어맥스">나이키 에어맥스 270 G 쉴드</a></span></div></li>
+                                <li class="slide slide7"><div><img src="./img/slide_07.jpg" alt=""><span><a href="#" title="머큐리얼 베이퍼">나이키 머큐리얼 베이퍼 13 프로 MDS HG</a></span></div></li>
+                                <li class="slide slide0"><div><img src="./img/slide_00.jpg" alt=""><span><a title="베이퍼맥스">나이키 에어 베이퍼맥스 2020 FK</a></span></div></li>
+                            </ul>
+
+                            <span class="next-btn-wrap"><a href="javascript:void(0);" class="next-btn blind" title="Next Button">Next Button</a></span>
+                            <span class="prev-btn-wrap"><a href="javascript:void(0);" class="prev-btn blind" title="Prev Button">Prev Button</a></span>
+                            
+                            </div>
+                     </div>
+                    </div>
+                </section>
+
+                <section id="section7">
+                    <h2 class="hide">Apparel</h2>
+                    <div class="wrap">
+                        <div class="container">
+                            <h3 class="title">
+                                Apparel Essentials
+                            </h3>
+                            <br>
+                            <ul class="image-container">
+                                <li class="image-link1" data-aos="zoom-in-up"><div><a href="#"><img src="./img/200914_hp_p10_bg1.jpg" alt=""></a><p>재킷&베스트</p></div></li>
+                                <li class="image-link2" data-aos="zoom-in-up"><div><a href="#"><img src="./img/200914_hp_p10_bg2.jpg" alt=""></a><p>후디&크루</p></div></li>
+                                <li class="image-link3" data-aos="zoom-in-up"><div><a href="#"><img src="./img/200914_hp_p10_bg3.jpg" alt=""></a><p>팬츠&타이츠</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer id="footer">
+                <div class="row row1">
+                    <div class="wrap">
+                        <ul class="fixedclear">
+                            <li>
+                                <dl>
+                                    <dt><a href="#" title="매장안내">매장안내</a></dt>
+                                    <dt><a href="#" title="로그인">로그인</a></dt>
+                                    <dt><a href="#" title="회원가입">회원가입</a></dt>
+                                    <dd class="hide"></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a title="고객센터">고객센터</a></dt>
+                                    <dd><a href="#" title="080-022-0182">080-022-0182</a></dd>
+                                    <dd><a href="#" title="주문/결제">주문/결제</a></dd>
+                                    <dd><a href="#" title="배송">배송</a></dd>
+                                    <dd><a href="#" title="주문배송조회">주문배송조회</a></dd>
+                                    <dd><a href="#" title="멤버쉽 혜택/서비스">멤버쉽 혜택/서비스</a></dd>
+                                    <dd><a href="#" title="공지사항">공지사항</a></dd>
+                                    <dd><a href="#" title="1:1 채팅 문의">1:1 채팅 문의</a></dd>
+                                    <dd><a href="#" title="1:1 이메일문의">1:1 이메일문의</a></dd>
+                                    <dd><a href="#" title="이용약관">이용약관</a></dd>
+                                    <dd><a href="#" title="개인정보처리방침">개인정보처리방침</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a title="ABOUT NIKE">ABOUT NIKE</a></dt>
+                                    <dd><a href="#" title="나이키에 대하여">나이키에 대하여</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a title="SOCIAL">SOCIAL</a></dt>
+                                    <dd class="inline"><span><a href="#" title="twitter"><i class='fa fa-twitter'></i></a></span></dd>
+                                    <dd class="inline"><span><a href="#" title="facebook"><i class='fa fa-facebook-f'></i></a></span></dd>
+                                    <dd class="inline"><span><a href="#" title="youtube"><i class="fa fa-youtube"></i></a></span></dd>
+                                    <dd class="inline"><span><a href="#" title="instagram"><i class='fa fa-instagram'></i></a></span></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="wrap">
+                        <ul class="left">
+                            <li><a href="#" title="국가"><i class="material-icons">location_on</i> 대한민국</a></li>
+                            <li>
+                                <span>
+                                &copy; 2020 Nike, Inc. All Rights Reserved.
+                            </span>
+                        </li>
+                        </ul>
+                        <ul class="right">
+                            <li><a href="#" title="">이용약관</a></li>
+                            <li><a href="#" title="">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row row3">
+                    <div class="wrap fixedclear">
+                        <address>
+                            <span>(유)나이키코리아 대표 KIM MYUNG HEE | 서울 강남구 테헤란로 152 강남파이낸스센터 31층</span><br><br>
+                            <span>통신판매업신고번호 2011-서울강남-03461 | 등록번호 220-88-09068 <a href="#">사업자정보확인</a></span><br><br>
+                            <span>개인정보보호책임자 ANDY HOUGHTON | 정보보호최고책임자 이희준 | 고객센터 전화문의<a href="#">080-022-0182</a></span><br><br>
+                            <span>FAX 02-6744-5880 | E-mail service@nike.co.kr | 호스팅서비스사업자 브리즈</span>
+                        </address>
+                        <div class="text">
+                            <span>안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한</span><br><br>
+                            <span>KG 이니시스의 구매안전 서비스 (채무지급보증)를 이용하실 수 있습니다.</span>
+                            <br><br>
+                            <span>온라인디지털콘텐츠사업발전법에 의한 <a href="#">콘텐츠보호안내 자세히보기<span><img src="img/footer_logo.png" alt="footer-logo"></span></a></span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="goTop">
+                <a href="#wrap" class="goTop-btn" title="goTop"><i class="material-icons">keyboard_arrow_up</i></a>
+            </div>
+        
+            <div class="quick">
+                <span>
+                    <a href="javascript:void(0)" class="url-btn" title="퀵 배너"><img id="introImg" src="./img/quick-menu4.png" alt="퀵 배너"></a>
+                </span>
+            </div>
+
+        </div>
+
+        <script src="js/slide.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/scroll_section.js"></script>
+   </body>
+</html>

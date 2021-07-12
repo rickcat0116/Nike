@@ -1,0 +1,249 @@
+@charset "UTF-8";
+.Helvetica {font-family:Helvetica;}
+
+#wrap {z-index:1;position:relative;width:100%;overflow:hidden;}
+
+/* 헤더 */
+#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:110px;}
+#wrap #header .link-header {z-index:2;position:relative;width:100%;height:38px;border-bottom:1px solid #d3d3d3;background:#fff;}
+
+/* 헤더 상단 Left 영역 */
+#wrap #header .link-header .logoBox {position:absolute;left:0;width:393.22px;height:38px;}
+#wrap #header .link-header .logoBox li{float:left;border-right:1px solid #d3d3d3; width:50px;height:38px;padding:0 20px;text-align:center;}
+#wrap #header .link-header .logoBox li:last-child{width:68.188px;height:38px;}
+#wrap #header .link-header .logoBox li a {font-size:12px;line-height:38px;color:#d3d3d3;font-weight:bold;}
+#wrap #header .link-header .logoBox li a:hover {color:#000;}
+
+/* 헤더 상단 Right 영역 */
+#wrap #header .link-header .menuBox {position:absolute;right:0;width:360.3px;height:38px;line-height:19px;}
+#wrap #header .link-header .menuBox li{display:inline-block;text-align:center;}
+#wrap #header .link-header .menuBox li span{color:#d3d3d3;}
+#wrap #header .link-header .menuBox li span a:nth-child(1) {width:48px;height:38px;padding:0 0 0 11px;}
+#wrap #header .link-header .menuBox li span a:nth-child(2) {width:36px;height:38px;padding:0 11px 0 0;}
+#wrap #header .link-header .menuBox li:nth-child(2) {width:48px;height:38px;padding:0 11px;}
+#wrap #header .link-header .menuBox li:nth-child(3) {width:48px;height:38px;}
+#wrap #header .link-header .menuBox li:nth-child(3) a {width:100%; color:#d3d3d3;}
+#wrap #header .link-header .menuBox li:nth-child(3) a:hover { color:#000;}
+#wrap #header .link-header .menuBox li:nth-child(3) a i {font-size:16px;}
+#wrap #header .link-header .menuBox li:nth-child(4) {width:70.594px;height:38px;padding:0 11px;}
+#wrap #header .link-header .menuBox li:nth-child(4) a {width:100%; color:#d3d3d3;}
+#wrap #header .link-header .menuBox li:nth-child(4) a:hover { color:#000;}
+#wrap #header .link-header .menuBox li:nth-child(4) a i {font-size:16px;}
+
+
+#wrap #header .link-header .menuBox a {font-size:12px;line-height:38px;color:#d3d3d3;}
+#wrap #header .link-header .menuBox a:hover {color:#000;}
+
+/* 헤더 하단 1번 영역 */
+#wrap #header #menu-nav {z-index:1;position:relative;top:0;width:100%;height:70px;margin:0 auto;padding:0 32px 0 30px;background:#fff;border-bottom:1px solid #e5e5e5;font-size:14px;text-align:center;transition:all 0.5s;}
+#wrap #header #menu-nav.nav-up {top: -140px;}
+#wrap #header #menu-nav .logo-box {position:absolute;bottom:5px;left:-40px;width:194px;height:40px;padding:15px 0;line-height:40px;text-align:center;}
+
+
+/* 헤더 하단 2번 영역 */
+#wrap #header #menu-nav .menu-wrap {display:inline-block;padding:22px 40px 0 40px;height:50px;}
+#wrap #header #menu-nav .menu-wrap ul {width:100%;}
+#wrap #header #menu-nav .menu-wrap ul > li {display:inline-block;line-height:26px;vertical-align:middle;}
+#wrap #header #menu-nav .menu-wrap ul > li > span {z-index:3;position:relative;height:50px;}
+#wrap #header #menu-nav .menu-wrap ul > li > span > a {font-size:14px;font-family: "Trade Gothic LT W01 Bd CnNo-20","Noto Sans KR", "맑은 고딕", serif, Arial, Helvetica;font-weight:bold;padding:0 20px;}
+#wrap #header #menu-nav .menu-wrap ul > li > span:hover {padding:0 0 25px 0;border-bottom:1px solid #000;}
+
+#wrap #header #menu-nav .menu-wrap ul li .sub {display:none;z-index:1;position:absolute;top:71px;left:0;width:100%;text-align:center;}
+#wrap #header #menu-nav .menu-wrap ul li:hover .sub {display:block;}
+#wrap #header #menu-nav .menu-wrap ul li:focus .sub {display:block;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul {width:100%; background:#fff;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li {width:100%; background:#fff;border-bottom:1px solid #d3d3d3;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap {width:1200px;margin:0 auto;padding:40px 0;} 
+
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul {width:100%;padding:0 0 0 140px;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li {float:left;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li:nth-child(1) {width:18%;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li:nth-child(2) {width:15%;border-left:1px solid #d3d3d3;padding:0 15px;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li:nth-child(3) {width:15%;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li:nth-child(4) {width:10%;border-left:1px solid #d3d3d3;padding:0 15px;}
+
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li > ul {width:100%;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li > ul > li {text-align:left;width:100%;line-height:22px;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li > ul > li > a {color:#000;font-size:15px;font-weight:bold;font-family: "Trade Gothic LT W01 Bd CnNo-20","Noto Sans KR", "맑은 고딕", serif, Arial, Helvetica;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li > ul > li > a:hover {border-bottom:2px solid #000;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li .sub-menu > li a {color:#000;font-size:13px;font-weight:300;}
+#wrap #header #menu-nav .menu-wrap ul li .sub > ul > li .sub-wrap > ul > li .sub-menu > li:first-child a {color:#000;font-size:15px;font-weight:bold;font-family: "Trade Gothic LT W01 Bd CnNo-20","Noto Sans KR", "맑은 고딕", serif, Arial, Helvetica;}
+
+#wrap #header #menu-na .search-wrapper {position:absolute;right:0;}
+
+/* 메인 영역 */
+#wrap #main {z-index:2;position:relative;margin-top:110px;}
+
+/* 섹션 1번 */
+#wrap #main #section1 {width:100%;height:1100px;}
+#wrap #main #section1 .wrap {position:relative;width:1870px;height:100%;margin:0 auto;}
+#wrap #main #section1 .wrap .image-container {position:relative;margin:0 41px;padding:0 8px;}
+#wrap #main #section1 .wrap .image-container .image-view {width:100%;}
+#wrap #main #section1 .wrap .image-container .image-view img {width:100%;}
+#wrap #main #section1 .wrap .image-container .image-text {margin:20px auto;width:600px;height:100px;}
+#wrap #main #section1 .wrap .image-container .image-text img {width:100%;height:100%;}
+#wrap #main #section1 .wrap .image-container .text-wrap .title {text-align:center;font-size:16px;font-weight:bold;font-family:'Noto Sans KR', sans-serif !important;}
+#wrap #main #section1 .wrap .image-container .text-wrap .button {text-align:center;}
+#wrap #main #section1 .wrap .image-container .text-wrap .button span {margin:20px 0;display:inline-block;width:200px;height:38px;border-radius:20px;background:#111;text-align:center;}
+#wrap #main #section1 .wrap .image-container .text-wrap .button span:nth-child(1) {width:195px;}
+#wrap #main #section1 .wrap .image-container .text-wrap .button span:nth-child(2) {width:155px;}
+#wrap #main #section1 .wrap .image-container .text-wrap .button span:hover {background-color:#555;}   
+#wrap #main #section1 .wrap .image-container .text-wrap .button span a {color:#fff;font-size:15px;font-weight:bold;line-height:38px;font-family: 'Noto Sans KR', sans-serif !important;}
+
+
+/* 섹션 2번 */
+#wrap #main #section2 {width:100%;height:1050px;}
+#wrap #main #section2 .wrap {position:relative;width:1870px;height:100%;margin:0 auto;}
+#wrap #main #section2 .wrap .image-container {position:relative;margin:0 41px;padding:0 8px;}
+#wrap #main #section2 .wrap .image-container .title {font-size:24px;font-family: 'Noto Sans KR', sans-serif !important;font-weight:bold;}
+#wrap #main #section2 .wrap .image-container .image-view {width:100%;}
+#wrap #main #section2 .wrap .image-container .image-view img {width:100%;}
+#wrap #main #section2 .wrap .image-container .text-wrap {margin:20px auto;}
+#wrap #main #section2 .wrap .image-container .text-wrap .title2 {text-align:center;font-size:43px; font-family:'Noto Sans KR', sans-serif !important; font-weight:bold;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap {margin:20px 0;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap .text {text-align:center;font-size:16px;font-family:'Noto Sans KR', sans-serif !important;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap .button {text-align:center;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap .button span {margin:20px 0;display:inline-block;height:38px;border-radius:20px;background:#111;text-align:center;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap .button span:nth-child(1) {width:115px;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap .button span:nth-child(2) {width:190px;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap .button span:hover {background-color:#555;}
+#wrap #main #section2 .wrap .image-container .text-wrap .sub-wrap .button span a {color:#fff;font-size:15px;font-weight:bold;line-height:38px;font-family: 'Noto Sans KR', sans-serif !important;}
+
+/* 섹션 3번 */
+#wrap #main #section3 {width:100%;height:1100px;}
+#wrap #main #section3 .wrap {position:relative;width:1870px;height:100%;margin:0 auto;}
+#wrap #main #section3 .wrap .image-container {position:relative;margin:0 41px;padding:0 8px;}
+#wrap #main #section3 .wrap .image-container .image-view {width:100%;}
+#wrap #main #section3 .wrap .image-container .image-view img {width:100%;}
+#wrap #main #section3 .wrap .image-container .text-wrap {margin:20px auto;}
+#wrap #main #section3 .wrap .image-container .text-wrap .title2 {text-align:center;font-size:43px; font-family:'Noto Sans KR', sans-serif !important; font-weight:bold;}
+#wrap #main #section3 .wrap .image-container .text-wrap .sub-wrap {margin:20px 0;}
+#wrap #main #section3 .wrap .image-container .text-wrap .sub-wrap .text {text-align:center;font-size:16px;font-family:'Noto Sans KR', sans-serif !important;}
+#wrap #main #section3 .wrap .image-container .text-wrap .sub-wrap .button {text-align:center;}
+#wrap #main #section3 .wrap .image-container .text-wrap .sub-wrap .button span {margin:20px 0;display:inline-block;width:155px;height:38px;border-radius:20px;background:#111;text-align:center;}
+#wrap #main #section3 .wrap .image-container .text-wrap .sub-wrap .button span:hover {background-color:#555;}
+#wrap #main #section3 .wrap .image-container .text-wrap .sub-wrap .button span a {color:#fff;font-size:15px;font-weight:bold;line-height:38px;font-family: 'Noto Sans KR', sans-serif !important;}
+
+/* 섹션 4번 */
+#wrap #main #section4 {width:100%;height:977.61px;  }
+#wrap #main #section4 .wrap {position:relative;width:1870px;height:100%;margin:0 auto;}
+#wrap #main #section4 .wrap .image-container {position:relative;margin:0 41px;padding:0 8px;}
+#wrap #main #section4 .wrap .image-container .image-view {width:100%;}
+#wrap #main #section4 .wrap .image-container .image-view img {width:100%;}
+#wrap #main #section4 .wrap .image-container .text-wrap {margin:20px auto;}
+#wrap #main #section4 .wrap .image-container .text-wrap .title2 {text-align:center;font-size:43px; font-family:'Noto Sans KR', sans-serif !important; font-weight:bold;}
+#wrap #main #section4 .wrap .image-container .text-wrap .sub-wrap {margin:20px 0;}
+#wrap #main #section4 .wrap .image-container .text-wrap .sub-wrap .text {text-align:center;font-size:16px;font-family:'Noto Sans KR', sans-serif !important;}
+#wrap #main #section4 .wrap .image-container .text-wrap .sub-wrap .button {text-align:center;}
+#wrap #main #section4 .wrap .image-container .text-wrap .sub-wrap .button span {margin:20px 0;display:inline-block;width:113px;height:38px;border-radius:20px;background:#111;text-align:center;}
+#wrap #main #section4 .wrap .image-container .text-wrap .sub-wrap .button span:hover {background-color:#555;}
+#wrap #main #section4 .wrap .image-container .text-wrap .sub-wrap .button span a {color:#fff;font-size:15px;font-weight:bold;line-height:38px;font-family: 'Noto Sans KR', sans-serif !important;}
+
+/* 섹션 5번 */
+#wrap #main #section5 {width:100%;height:850px;}
+#wrap #main #section5 .wrap {position:relative;width:1870px;height:100%;margin:0 auto;}
+#wrap #main #section5 .wrap .container {position:relative;margin:0 41px;padding:0 8px;}
+#wrap #main #section5 .wrap .container .title {font-size:24px;font-family: 'Noto Sans KR', sans-serif !important;font-weight:bold;}
+#wrap #main #section5 .wrap .container .image-container {position:relative;width:100%;height:746px;padding:0 10px;}
+#wrap #main #section5 .wrap .container .image-container .image-link:nth-child(1){position:absolute;top:0;left:0;}
+#wrap #main #section5 .wrap .container .image-container .image-link:nth-child(1) img {width:888px;height:700px;}
+#wrap #main #section5 .wrap .container .image-container .image-link:nth-child(2){position:absolute;top:0;right:0;}
+#wrap #main #section5 .wrap .container .image-container .image-link:nth-child(2) img {width:888px;height:700px;}
+#wrap #main #section5 .wrap .container .image-container .image-link p{z-index:2;position:absolute;left:45px;bottom:115px;display:block;color:#fff;font-weight:bold;font-size:18px;font-family: 'Noto Sans KR', sans-serif !important;}
+#wrap #main #section5 .wrap .container .image-container .image-link div span {z-index:2;position:absolute;left:40px;bottom:50px;display:block;width:62px;height:24px;padding:8px 28px;background:#fff;border-radius:20px;text-align:center;}
+#wrap #main #section5 .wrap .container .image-container .image-link div span:hover {opacity:0.7;}
+#wrap #main #section5 .wrap .container .image-container .image-link div span a {color:#000;font-size:15px;font-weight:bold;line-height:24px;font-family: 'Noto Sans KR', sans-serif !important;}
+
+
+/* 섹션 6번 */
+#wrap #main #section6 {width:100%;height:800px;}
+#wrap #main #section6 .wrap {position:relative;width:1870px;height:100%;margin:0 auto;}
+#wrap #main #section6 .wrap .slide-container {position:relative;margin:0 41px;padding:0 8px;}   
+#wrap #main #section6 .wrap .slide-container .title {font-size:24px;font-family: 'Noto Sans KR', sans-serif !important;font-weight:bold;}
+#wrap #main #section6 .wrap .slide-container .slide-view {z-index:2;position:relative;width:1772px;margin:0 auto;overflow:hidden; }
+#wrap #main #section6 .wrap .slide-container .slide-view .slide-wrap {position:relative;left:calc(-592px*0);width:calc(592px*10);margin-left:-592px;}
+#wrap #main #section6 .wrap .slide-container .slide-view .slide-wrap .slide {float:left;width:592px;}
+#wrap #main #section6 .wrap .slide-container .slide-view .slide-wrap .slide div {position:relative;margin:20px 5px;}
+#wrap #main #section6 .wrap .slide-container .slide-view .slide-wrap .slide div img {z-index:1;position:relative;width:100%;}
+#wrap #main #section6 .wrap .slide-container .slide-view .slide-wrap .slide div span {position:relative;top:10px;left:0;} 
+#wrap #main #section6 .wrap .slide-container .slide-view .slide-wrap .slide div span a {color:#111111;font-size:18px;font-family: 'Noto Sans KR', sans-serif !important;font-weight:bold; padding:10px 0;} 
+
+#wrap #main #section6 .wrap .slide-container .next-btn-wrap {z-index:2;position:absolute;top:60%;margin-top:-100px;right:30%;margin-right:-520px;display:block;width:40px;height:40px;background:transparent;border:2px solid #222;border-radius:50%;overflow:hidden;opacity:0;transition:all 0.5s;}
+#wrap #main #section6 .wrap .slide-container.addBtn .next-btn-wrap {opacity:0.5;} 
+#wrap #main #section6 .wrap .slide-container .next-btn-wrap:hover {opacity:1;}
+#wrap #main #section6 .wrap .slide-container .next-btn-wrap a {display:block;width:100%;line-height:40px;text-align:center;background:#fff url(../img/arrow_right_on.png) no-repeat 55% 50%;}
+
+
+#wrap #main #section6 .wrap .slide-container .prev-btn-wrap {z-index:2;position:absolute;top:60%;margin-top:-100px;left:30%;margin-left:-520px;display:block;width:40px;height:40px;background:transparent;border:2px solid #222;border-radius:50%;overflow:hidden;opacity:0;transition:all 0.5s;}
+#wrap #main #section6 .wrap .slide-container.addBtn .prev-btn-wrap{opacity:0.5;} 
+#wrap #main #section6 .wrap .slide-container .prev-btn-wrap:hover {opacity:1;}
+#wrap #main #section6 .wrap .slide-container .prev-btn-wrap a {display:block;width:100%;line-height:40px;text-align:center;background:#fff url(../img/arrow_left_on.png) no-repeat 45% 50%;}
+
+
+/* 섹션 7번 */
+#wrap #main #section7 {width:100%;height:850px;}
+#wrap #main #section7 .wrap {position:relative;width:1870px;height:100%;margin:0 auto;}
+#wrap #main #section7 .wrap .container {position:relative;margin:0 41px;padding:0 8px;}
+#wrap #main #section7 .wrap .container .title {font-size:24px;font-family: 'Noto Sans KR', sans-serif !important;font-weight:bold;}
+#wrap #main #section7 .wrap .container .image-container {position:relative;width:100%;height:746px;}
+#wrap #main #section7 .wrap .container .image-container li {z-index:1;position:relative;float:left;width:584px;}
+#wrap #main #section7 .wrap .container .image-container li:nth-child(1) {padding-right:10px;}
+#wrap #main #section7 .wrap .container .image-container li:nth-child(2) {padding-right:10px;}
+#wrap #main #section7 .wrap .container .image-container li img {width:100%;}
+#wrap #main #section7 .wrap .container .image-container li p{z-index:2;position:absolute;left:45px;top:50px;display:block;color:#fff;font-weight:bold;font-size:19px;font-family: 'Noto Sans KR', sans-serif !important;}
+
+/* 푸터 영역 */
+#wrap #footer {z-index:1;position:relative;width:100%;height:auto;background:#111111;font-family: "Trade Gothic LT W01 Bd CnNo-20","Noto Sans KR", "맑은 고딕", serif, Arial, Helvetica;}
+
+#wrap #footer .row .wrap {margin:0 auto;}
+
+#wrap #footer .row1 {width:100%;padding:35px 0;}
+#wrap #footer .row1 .wrap {width:800px;padding:20px 200px;} 
+#wrap #footer .row1 .wrap ul {width:100%;}
+#wrap #footer .row1 .wrap ul li {float:left;width:25%;}
+#wrap #footer .row1 .wrap ul li dl {width:100%;}
+#wrap #footer .row1 .wrap ul li dl dt {padding-bottom:15px;}
+#wrap #footer .row1 .wrap ul li dl dt a {font-size:13px;color:#fff;font-weight:bold;}
+#wrap #footer .row1 .wrap ul li dl a:hover {text-decoration:underline;}
+#wrap #footer .row1 .wrap ul li dl dd {padding-bottom:10px;}
+#wrap #footer .row1 .wrap ul li dl dd a {font-size:11px;color:#999999;}
+#wrap #footer .row1 .wrap ul li dl dd a {font-size:11px;color:#999999;}
+#wrap #footer .row1 .wrap ul li dl .inline {display:inline-block;text-align:center;padding:0 3px 0 0;}
+#wrap #footer .row1 .wrap ul li dl .inline span  {width:100%;}
+#wrap #footer .row1 .wrap ul li dl .inline span a {display:block;background:#444;width:25px;height:25px;line-height:25px;border-radius:50%;overflow:hidden;}
+#wrap #footer .row1 .wrap ul li dl .inline span a:hover{background:#fff;}
+#wrap #footer .row1 .wrap ul li dl .inline span a i {color:#000;font-size:16px;padding:2px 0 5px 0;}
+
+#wrap #footer .row2 {width:100%;height:20px;padding:15px 32px;border-top:1px solid rgb(68, 68, 68);border-bottom:1px solid rgb(68, 68, 68);}
+#wrap #footer .row2 .wrap {width:100%;}
+#wrap #footer .row2 .wrap .left {position:absolute;left:10px;}
+#wrap #footer .row2 .wrap .left li {float:left;padding:0 5px;text-align:center;line-height:20px;font-size:10px;color:#fff;}
+#wrap #footer .row2 .wrap .left li a {line-height:20px;font-size:10px;color:#fff;}
+#wrap #footer .row2 .wrap .left li a i {color:#fff;line-height:20px;font-size:10px;}
+#wrap #footer .row2 .wrap .right {position:absolute;right:10px;}
+#wrap #footer .row2 .wrap .right li {float:left;padding:0 5px;text-align:center;line-height:20px;color:#fff;}
+#wrap #footer .row2 .wrap .right li a {line-height:20px;font-size:10px;color:#fff;}
+
+#wrap #footer .row3 {width:100%;padding:5px 0;}
+#wrap #footer .row3 .wrap {width:950px;padding:10px 250px;}
+#wrap #footer .row3 .wrap address {float:left;padding:0 20px;font-size:11px;color:#999999;}
+#wrap #footer .row3 .wrap address a {color:#fff;}
+#wrap #footer .row3 .wrap .text {float:left;font-size:11px;color:#999999;}
+#wrap #footer .row3 .wrap .text a {color:#fff;}
+#wrap #footer .row3 .wrap span img  {width:24px;padding:0 15px;}
+#wrap #footer .row3 .wrap img  {width:100%;}
+
+/* goTop */
+.goTop {opacity:0;z-index:3;position:fixed;right:30px;bottom:45px;width:36px;height:36px;overflow:hidden;transition:all .5s;}
+.goTop.nav-up {opacity:1;}
+.goTop:hover {bottom:50px;}
+.goTop a {display:inline-block;width:100%;height:100%;background:#ebebeb;transition:all 1s;}
+.goTop a:hover {background:#f36927;}
+.goTop a i {font-size:36px;}
+.goTop a:hover i {color:#fff;}
+
+.quick {z-index:3;position:fixed;top:120px;left:54%;margin-left:570px;width:240px;height:240px;transition:all .6s;}
+#wrap .quick span{display:block;width:100%;height:240px;opacity:1;}
+#wrap .quick span a {display:inline-block;opacity:0.5;transition:all .3s;}
+#wrap .quick span a:hover {opacity:1;}
+#wrap .quick span a img {width:100%;}
